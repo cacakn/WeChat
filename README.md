@@ -5,7 +5,7 @@
 ### description
 - 界面及交互设计来自知乎 Android 版本
 - _工具_: [微信 web 开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=1477579747265)
-- _数据_: 没有开放 API, 所以使用伪造本地数据
+- _数据_: 没有开放 API, 所以使用伪造本地数据【PPT提供该小程序的介绍】
 
 #### 功能及使用的组件等
 * 列表式渲染数据
