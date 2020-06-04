@@ -1,0 +1,14 @@
+<view class="bg container">
+  <view class="culture_border  animated bounceIn">
+  <image class="culture_img_border" src="https://gitee.com/KingCrimson/xiang/raw/master/images/4%E6%9C%88%E6%9D%8F%E8%8A%B1%E6%B2%9F.jpg"></image>
+  <view class="culture_text_border"><h3>杏花沟</h3></view> 
+  </view>
+  <view class="culture_border  animated bounceIn">
+  <image class="culture_img_border" src="https://gitee.com/KingCrimson/xiang/raw/master/images/5%E6%9C%88%E5%A4%A7%E6%B5%B7%E9%81%93.jpg"></image>
+  <view class="culture_text_border"><h3>大海道</h3></view> 
+  </view>
+  <view class="culture_border  animated bounceIn">
+  <image class="culture_img_border" src="https://gitee.com/KingCrimson/xiang/raw/master/images/6%E6%9C%88%E7%BA%AA%E5%BF%B5%E8%83%8C%E9%AA%A8%E7%BA%B3%E7%93%A6%E9%9C%8D%E9%83%A8%E8%90%BD%E5%85%AC%E5%9B%AD.jpg"></image>
+  <view class="culture_text_border"><h3>背骨纳瓦霍部落公园</h3></view> 
+  </view>
+</view>

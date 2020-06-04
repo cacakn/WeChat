@@ -1,0 +1,3 @@
+<view class="bg">
+<video class="one_mp4" src="/images/1.mp4"  autoplay="true" controls='{{false}}'></video>
+</view>  

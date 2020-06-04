@@ -1,0 +1,73 @@
+
+<view class="container more">
+  <view class="user flex-wrap" >
+    <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="btn"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  </view>
+
+  <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/recent.png"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="record">
+        <text>学习记录</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/star.png"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="collection">
+        <text>学习收藏</text>
+      </view>
+    </view>
+   
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/flag.png"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="achievement">
+        <text>学习成就</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/write.png"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="note">
+        <text>学习笔记</text>
+      </view>
+    </view>
+     <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/allread.png"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="test">
+        <text>考核认证</text>
+      </view>
+    </view>
+     <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/comment.png"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="feedback">
+        <text>意见反馈</text>
+      </view>
+    </view> 
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/shezhi.png"></image>
+      </view>
+      <view class="myitem-name flex-item" bindtap="setup">
+        <text>设置</text>
+      </view>
+    </view> 
+
+  </view>
+</view>

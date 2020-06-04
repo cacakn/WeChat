@@ -1,0 +1,87 @@
+{
+  "pages": [
+   "pages/start/start",
+    "pages/index/index",
+    "pages/record/record",
+    "pages/record/login/login",
+    "pages/discovery/discovery",
+    "pages/notify/notify",
+    "pages/chat/chat",
+    "pages/more/more",
+    "pages/more/personal/note/note",
+    "pages/more/personal/record/record",
+    "pages/more/personal/collection/collection",
+    "pages/more/personal/achievement/achievement",
+    "pages/more/personal/test/test",
+    "pages/more/personal/feedback/feedback",
+    "pages/more/personal/setup/setup",
+    "pages/more/personal/information/information",
+    "pages/more/personal/setup/set/anger/anger",
+    "pages/more/personal/setup/set/new/new",
+    "pages/more/personal/test/ceshi/sj/sj",
+    "pages/more/personal/test/ceshi/sx/sx",
+    "pages/more/personal/test/ceshi/ctj/ctj",
+    "pages/more/personal/test/ceshi/ctj/tb/tb",
+    "pages/discoveryDetails/discoveryDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3FA655",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_focus.png"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "text": "",
+        "iconPath": "images/eye.png",
+        "selectedIconPath": "images/eye1.png"
+      },
+      {
+        "pagePath": "pages/notify/notify",
+        "text": "",
+        "iconPath": "images/burger.png",
+        "selectedIconPath": "images/burger_focus.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "",
+        "iconPath": "images/chat.png",
+        "selectedIconPath": "images/chat_focus.png"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "",
+        "iconPath": "images/mypic.png",
+        "selectedIconPath": "images/mypic1.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-collapse": "dist/collapse/index",
+    "van-collapse-item": "dist/collapse-item/index",
+    "van-search": "dist/search/index",
+    "van-cell": "dist/cell/index",
+    "van-cell-group": "dist/cell-group/index",
+    "van-tab": "dist/tab/index",
+    "van-tabs": "dist/tabs/index",
+    "van-nav-bar": "dist/nav-bar/index"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

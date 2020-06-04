@@ -1,0 +1,13 @@
+/**index.wxss**/
+.index-top-card{
+  width: 100%;
+  height: 380rpx;
+}
+/*首页轮播图宽高*/
+.index-slide-image{
+  width: 100%;
+  height: 100%;
+}
+.index-card{
+  margin-top: 20rpx;
+}

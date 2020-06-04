@@ -1,0 +1,43 @@
+<view class="my">
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="头像" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="昵称" size="small" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="微信号" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="二维码名片" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="更多" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+     <van-cell is-link title="我的地址" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+ 
+
+</view>

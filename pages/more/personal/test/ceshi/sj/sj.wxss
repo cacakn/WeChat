@@ -1,0 +1,80 @@
+/**index.wxss**/
+.container{
+  padding: 30rpx 0;
+}
+.card{
+  width: 84%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 30rpx;
+}
+.card .titleBar{
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card .title{
+  font-weight: bold;
+  font-size: 1.1em;
+  border-left: 5px solid rgba(0, 0, 0, 0.5);
+  text-indent: 0.2em;
+}
+.card .status{
+
+}
+.card .content{
+  padding: 10px 0;
+}
+.card .questionTitle{
+  font-weight: 400;
+  padding: 20px 0;
+}
+.card .questionItem{
+  padding: 10px 0;
+  border: 1px solid #eee;
+  border-color: #eee transparent;
+  margin: 10px 0;
+}
+.card .questionItem::before{
+  content: "A";
+  padding: 0px 10px 0 0;
+}
+.card .questionItem:nth-child(2)::before{
+  content: "B";
+}
+.card .questionItem:nth-child(3)::before{
+  content: "C";
+}
+.card .questionItem:nth-child(4)::before{
+  content: "D";
+}
+.card .questionControl{
+  display: flex;
+  flex-direction: flow;
+  justify-content: flex-end;
+}
+
+
+@import "../../../../../../animate/animate.wxss";
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  /* 
+  添加页面切换效果
+   */
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+} 

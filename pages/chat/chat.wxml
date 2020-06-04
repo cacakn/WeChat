@@ -1,0 +1,213 @@
+<!--logs.wxml-->
+<view class="top-tab flex-wrp flex-tab">
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+</view>
+
+<scroll-view scroll-y="true" class="container notify withtab" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+
+    <view class="unread">
+      <scroll-view></scroll-view>
+      <text>0 条未读</text>
+      <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/allread.png"></image>
+    </view>
+
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/佟丽娅.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">佟丽娅  回答了问题</text>
+        <text class="notify-title">新疆的哈密瓜为何如此之甜？</text>
+      </view>
+    </view>
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/古力娜扎.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">古力娜扎  回答了问题</text>
+        <text class="notify-title">新疆独特美食你知道多少？</text>
+      </view>
+    </view>
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/周杰伦.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">周杰伦  回答了问题</text>
+        <text class="notify-title">你知道新疆民谣的韵律吗？</text>
+      </view>
+    </view>
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/姚明.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">姚明  回答了问题</text>
+        <text class="notify-title">新疆旅游必去的几个地方？</text>
+      </view>
+    </view>
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/李咏.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">李咏  回答了问题</text>
+        <text class="notify-title">烤全羊的秘制过程？</text>
+      </view>
+    </view>
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/蒋欣.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">蒋欣  回答了问题</text>
+        <text class="notify-title">七月的赛里木湖有多美？</text>
+      </view>
+    </view>
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/迪丽热巴.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">迪丽热巴  回答了问题</text>
+        <text class="notify-title">你眼里的那达慕是什么样的？</text>
+      </view>
+    </view>
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/阿尔法.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">阿尔法  回答了问题</text>
+        <text class="notify-title">你喜欢新疆吗？</text>
+      </view>
+    </view>
+  </view>
+  <view class="ctnt1 placehold" hidden="{{currentNavtab==1 ? '' : true}}">
+    <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+      <view class="feed-item">
+        <view class="feed-source">
+          <a class="">
+            <view class="avatar">
+              <image src="{{item.feed_source_img}}"></image>
+            </view>
+            <text>{{item.feed_source_name}} {{item.feed_source_txt}}</text>
+          </a>
+          <image class="item-more" mode="aspectFit" src="https://gitee.com/KingCrimson/xiang/raw/master/images/more.png"></image>
+        </view>
+        <view class="feed-content">
+          <view class="question" qid="{{question_id}}" bindtap="bindQueTap">
+            <a class="question-link">
+              <text>{{item.question}}</text>
+            </a>
+          </view>
+          <view class="answer-body">
+            <view bindtap="bindItemTap">
+              <text class="answer-txt" aid="{{answer_id}}">{{item.answer_ctnt}}</text>
+            </view>
+            <view class="answer-actions" bindtap="bindItemTap">
+              <view class="like dot">
+                <a>{{item.good_num}} 赞同 </a>
+              </view>
+              <view class="comments dot">
+                <a>{{item.comment_num}} 评论 </a>
+              </view>
+              <view class="follow-it">
+                <a>关注问题</a>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+
+  <view class="ctnt2 placehold" hidden="{{currentNavtab==2 ? '' : true}}">
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/佟丽娅.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">佟丽娅</text>
+      </view>
+      <view class="control">
+        <text>关注</text>
+      </view>
+    </view>
+
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/古力娜扎.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">古力娜扎</text>
+      </view>
+      <view class="control">
+        <text>关注</text>
+      </view>
+    </view>
+
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/周杰伦.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">周杰伦</text>
+      </view>
+      <view class="control">
+        <text>关注</text>
+      </view>
+    </view>
+
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/蒋欣.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">蒋欣</text>
+      </view>
+      <view class="control">
+        <text>关注</text>
+      </view>
+    </view>
+
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/迪丽热巴.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">迪丽热巴</text>
+      </view>
+      <view class="control">
+        <text>关注</text>
+      </view>
+    </view>
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/阿尔法.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">阿尔法</text>
+      </view>
+      <view class="control">
+        <text>关注</text>
+      </view>
+    </view>
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/姚明.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">姚明</text>
+      </view>
+      <view class="control">
+        <text>关注</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

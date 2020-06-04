@@ -1,0 +1,14 @@
+<view class="bg container">
+  <view class="food_border  animated bounceIn">
+  <image class="food_img_border" src="https://gitee.com/KingCrimson/xiang/raw/master/images/1月乌伦古湖.jpg"></image>
+  <view class="food_text_border"><h3>乌伦古湖</h3></view> 
+  </view>
+  <view class="food_border  animated bounceIn">
+  <image class="food_img_border" src="https://gitee.com/KingCrimson/xiang/raw/master/images/2%E6%9C%88%E4%BC%8A%E7%8A%81.jpg"></image>
+  <view class="food_text_border"><h3>伊利</h3></view> 
+  </view>
+  <view class="food_border  animated bounceIn">
+  <image class="food_img_border" src="https://gitee.com/KingCrimson/xiang/raw/master/images/3%E6%9C%88%E7%A6%BE%E6%9C%A8%E6%9D%91.jpg"></image>
+  <view class="food_text_border"><h3>禾木村</h3></view> 
+  </view>
+</view>

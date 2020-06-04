@@ -1,0 +1,34 @@
+<view class='course-list'>
+  <view class='course-item' wx:for="{{courses}}" wx:for-item="item" wx:key="{{item.id}}">
+    <image bindtap="_navigateTo" data-path="/pages/courseDetails/courseDetails" data-skip="{{true}}" data-item="{{item}}" src="{{item.cover}}" lazy-load="true" class="course-item-cover" />
+    <view class='course-item-info'>
+      <view bindtap="_navigateTo" data-path="/pages/courseDetails/courseDetails" data-skip="{{true}}" data-item="{{item}}">
+        <text class='course-title'>{{item.name}}</text>
+        <!--统计数据  -->
+        <view class='course-stat'>
+
+          <view class='course-stat-item {{item.price ==0 ? "":"has-price"}}'>
+            <i name='thumb' />
+            <text>{{item.thumb}}</text>
+          </view>
+
+          <view class='course-stat-item'>
+            <i name='browse' />
+            <text>{{item.browse}}</text>
+          </view>
+
+          <view class='course-stat-item'>
+            <i name='collect' />
+            <text>{{item.collect}}</text>
+          </view>
+
+        </view>
+      </view>
+      <!--课程作者 -->
+      <view class='course-author' bindtap="_navigateTo" data-skip="{{!noSkip}}" data-path="/pages/user/user" data-item="{{item.author}}">
+        <image src='{{item.author.cover}}' class='course-author-cover' />
+        <view class='course-author-name'>{{item.author.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>

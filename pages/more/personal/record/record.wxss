@@ -1,0 +1,7 @@
+.text1{
+  padding: 30px;
+  margin: 30px;
+  background-color: white;
+  text-align: center;
+  font-family: PingFangSC-Thin;
+}

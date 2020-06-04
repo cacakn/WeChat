@@ -1,0 +1,24 @@
+<view class='main'>
+  <view class='header'>
+
+  </view>
+  <view class='body'>
+    <form bindsubmit='submit'>
+      <view class='username'>
+        <input placeholder='账号/手机号/微信/QQ' name="username" value='' bindinput="phoneInput"></input>
+      </view>
+      <view class='password'>
+        <input password='true' name="pwd" placeholder='密码' value='' bindinput="passwordInput"></input>
+      </view>
+      <view>
+        <button class="sub"   disabled="{{disabled}}" bindtap="bindlogin">登录</button>
+        <view class="dlbox">
+          <button class="zc" style="margin-left:0px" bindtap="ddd">忘记密码</button>
+          <button class="zc" bindtap="bindrecode" style="margin-right:0px">用户注册</button>
+          
+        </view>
+
+      </view>
+    </form>
+  </view>
+</view>

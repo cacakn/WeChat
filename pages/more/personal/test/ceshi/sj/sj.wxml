@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="card">
+    <view class="titleBar">
+      <view class="title">模拟练习</view>
+      <view class="status">{{sj}}/{{questions.length}}</view>
+    </view>
+    <view class="content">
+      <view class="questionTitle">{{questions[sj].Question_body}}</view>
+      <view class="questionItems">
+        <!-- <view wx:for="{{questions[cur-1].Question_items}}" wx:for-item="idx" wx:key="index" class="questionItem">{{idx}}</view> -->
+        <button id='A' bindtap="dianji" style="background-color: {{xxA}};">A:{{questions[sj].Question_items[0]}}</button>
+        <button id='B' bindtap="dianji"style="background-color: {{xxB}};">B:{{questions[sj].Question_items[1]}}</button>
+        <button id='C' bindtap="dianji"style="background-color: {{xx}};">C:{{questions[sj].Question_items[2]}}</button>
+        <button id='D' bindtap="dianji"style="background-color: {{xxD}};">D:{{questions[sj].Question_items[3]}}</button>
+      </view>
+      <view class='questionControl'>
+        <button type="default" bindtap="onclick">下一题</button>
+        <!-- <van-button bindtap="jiexi">{{analysis_jiexi}}</van-button> -->
+      </view>
+    </view>
+    <!-- <view bindtap="jiexi">
+      {{analysisjiexi}}
+    </view> -->
+  </view>
+</view>

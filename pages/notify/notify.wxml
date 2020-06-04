@@ -1,0 +1,34 @@
+<view class="main bg">
+  <navigator bindtap='go_food'>
+  <view class="snip1573" hover-class="snip1573_one" >
+  <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/1.png" alt="sample94" />
+    <figcaption>
+      <h3>Spring</h3>
+    </figcaption>
+  </view> 
+  </navigator>
+   <navigator bindtap='go_culture'>
+  <view class="snip1573" hover-class="snip1573_one" >
+  <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/4.png" alt="sample94" />
+    <figcaption>
+      <h3>Summer</h3>
+    </figcaption>
+  </view> 
+   </navigator>
+   <navigator bindtap='go_scape'>
+  <view class="snip1573" hover-class="snip1573_one" >
+  <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/tourism.jpg" alt="sample94" />
+    <figcaption>
+      <h3>Autumn</h3>
+    </figcaption>
+  </view> 
+   </navigator>
+      <navigator bindtap='go_winter'>
+  <view class="snip1573" hover-class="snip1573_one" >
+  <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/3.png" alt="sample94" />
+    <figcaption>
+      <h3>Winter</h3>
+    </figcaption>
+  </view> 
+   </navigator>
+</view>

@@ -1,0 +1,18 @@
+<!-- pages/discoveryDetails/discoveryDetails.wxml -->
+<view class="container">
+ <block wx:for="{{culturelist}}"  wx:for-item="item" wx:for-index="idx">
+ <!-- 以下为口播代码  -->
+                      <view class="bigbox">
+                        <button class="aniu" bindtap="say" data-text="{{item.text}}">
+                          <image class="tupian" src="https://gitee.com/KingCrimson/xiang/raw/master/images/koubo.png" ></image>
+                          <text class="text1">口播</text>
+                        </button>
+                      </view>
+  <image src="{{item.img}}" class="picture"></image>
+  <view class="time" hover-class="none" hover-stop-propagation="false">{{item.massage}}</view>
+  <view class="msg" hover-class="none" hover-stop-propagation="false">{{item.title}}</view>
+  <view class="info" hover-class="none" hover-stop-propagation="false">
+  <text>{{item.text}}</text>
+  </view>
+  </block>
+</view>

@@ -1,0 +1,20 @@
+<van-tabs animated>
+  <van-tab title="id">
+    <view class="text1">id: 彼岸花</view>
+  </van-tab>
+  <van-tab title="学习时长">
+    <view class="text1">总学时: 150 小时 , 今日时长：4 小时</view>
+  </van-tab>
+   <van-tab title="做题">
+    <view class="text1">总题目: 150 题 , 今日做题 :30 题 , 错题: 5 题</view>
+  </van-tab>
+  <van-tab title="访问次数">
+    <view class="text1">总访问次数: 80 次 , 今日访问：2 次</view>
+  </van-tab>
+  <van-tab title="讨论次数">
+    <view class="text1">总讨论次数: 90 次 , 今日讨论：20 次</view>
+  </van-tab>
+  <van-tab title="访问天数">
+    <view class="text1">总访问天数: 50 次 , 访问天数：30 天</view>
+  </van-tab>
+</van-tabs>

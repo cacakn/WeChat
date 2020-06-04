@@ -1,0 +1,5 @@
+ .vui-card {
+   /* margin-top: 30rpx;  */
+  background-color: #fff;
+  padding: 15rpx;
+} 

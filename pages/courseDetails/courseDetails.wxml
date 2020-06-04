@@ -1,0 +1,52 @@
+<!-- logs.wxml -->
+<!-- <view class="top-tab flex-wrp flex-tab">
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+</view> -->
+
+
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="search flex-wrp">
+    <view class="search-left flex-item">
+      <image src="../../images/search.png"></image>
+      <input placeholder="搜索您喜欢的视频和文章" placeholder-class="search-placeholder" />
+    </view>
+    <view class="search-right flex-item" bindtap="upper">
+      <image src="../../images/lighting.png"></image>
+    </view>
+  </view>
+
+
+  <view class="page-body">
+    <view class="page-section tc">
+      <video id="myVideo" class="video" src="//gitee.com/KingCrimson/xiang/raw/master/video/sxw.mp4"
+        binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+      <text style="font-size: 25px; padding:10px">新疆赛里木湖</text>
+      <van-collapse value="{{ activeNames }}" bind:change="onChange">
+        <van-collapse-item name="2">
+          <view slot="title">简介
+            <van-icon name="question-o" />
+          </view>
+          省级旅游名胜景区，第五批国家级风景名胜区，是新疆海拔最高、面积最大、风光秀丽的高山湖泊，又是大西洋暖湿气流最后眷顾的地方，因此有“大西洋最后一滴眼泪”的说法。
+        </van-collapse-item>
+      </van-collapse>
+
+
+      <view class="weui-cells">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">弹幕内容</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input bindblur="bindInputBlur" class="weui-input" type="text" placeholder="在此处输入弹幕内容" />
+          </view>
+        </view>
+      </view>
+      <view class="btn-area">
+        <button bindtap="bindSendDanmu" class="page-body-button" type="primary" formType="submit">发送弹幕</button>
+      </view>
+    </view>
+  </view>
+
+</scroll-view>

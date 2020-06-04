@@ -1,0 +1,38 @@
+
+<view class="my">
+    <view class="my-item flex-wrp">
+      
+      <view class="myitem-name flex-item" >
+        <text>我的学习称号</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+     
+      <view class="myitem-name flex-item" >
+        <text>倔强青铜</text><progress percent="20" show-info /><text>已解锁</text>
+      </view>
+    </view>
+   
+    <view class="my-item flex-wrp">
+      
+      <view class="myitem-name flex-item" >
+          <text>荣耀黄金</text><progress percent="0" show-info /><text>已解锁</text>
+      </view>
+    </view>
+
+    <view class="my-item flex-wrp">
+      
+      <view class="myitem-name flex-item" >
+         <text>永恒钻石</text><progress percent="0" show-info /><text>已解锁</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      
+      <view class="myitem-name flex-item" >
+         <text>最强王者</text><progress percent="0" show-info /><text>已解锁</text>
+      </view>
+    </view>
+    
+
+  </view>
+

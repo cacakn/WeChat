@@ -1,0 +1,36 @@
+<swiper class='index-top-card' indicator-dots autoplay interval="3000" duration="500">
+  <block wx:for="{{topData}}" wx:for-item="item" wx:key="{{item.id}}">
+    <swiper-item>
+      <image bindtap="goToPath" data-item="{{item}}" src="{{item.cover}}" class="index-slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='container'>
+  <!--推荐课程  -->
+
+  <view class='index-card'>
+    <card>
+      <view slot="title" class='vui-card-title'>
+        <i name="recommend" color="#29bafe" />热点推荐
+        <view bindtap="_navigateTo" data-title="热点推荐" data-type="1" slot="extra" class='vui-card-extra'>更多
+          <i name="more" />
+        </view>
+      </view>
+      <vui-course-list slot="content" courses="{{nominateList}}" />
+    </card>
+  </view>
+
+  <!--热门课程  -->
+  <view class='index-card'>
+    <card>
+      <view slot="title" class='vui-card-title'>
+        <i name="hot" color="red" />重点推荐
+        <view bind:tap="_navigateTo" data-title="重点推荐" data-type="2" slot="extra" class='vui-card-extra'>更多
+          <i name="more" />
+        </view>
+      </view>
+      <vui-course-list slot="content" courses="{{hotList}}" />
+    </card>
+  </view>
+</view>

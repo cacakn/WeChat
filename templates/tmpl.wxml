@@ -1,0 +1,123 @@
+<!--课程列表页面  -->
+<template name="courseList">
+  <view class='course-list'>
+    <navigator class='course-search' url="/pages/search/search" hover-class='none'>
+      <!-- <text class='vui-icon icon-collect'></text> -->
+      <icon type="search" style='margin:8px 20rpx;' size="20"/>
+    </navigator>
+    <view class='course-item' wx:for="{{courseList}}" wx:for-item="item" wx:key="{{item.id}}">
+     <image  bindtap="goToPath" data-item="{{item}}" src="{{item.cover}}" lazy-load="true" class="course-item-cover" /> 
+      <view class='course-item-info'>
+        <text class='course-title'>{{item.name}}</text>
+        <!--统计数据  -->
+        <text class='course-stat'>
+
+         <text class='course-stat-item {{item.price ==0 ? "":"has-price"}}'>
+           <text class='vui-icon icon-money'/>
+           <text>{{item.price==0?'免费':item.price}}</text>
+        </text>
+
+        <text class='course-stat-item'>
+          <text class='vui-icon icon-browse'/>
+          <text>{{item.browse}}</text>
+        </text>
+
+        <text class='course-stat-item'>
+         <text class='vui-icon icon-collect'/>
+         <text>{{item.collect}}</text>
+        </text>
+
+        </text>
+        <navigator class='course-org' url="/pages/org/org" hover-class='none'>
+          <image src='{{item.org.cover}}' class='course-org-cover' />
+          <text class='course-org-name'>{{item.org.name}}</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!--nominateList 首页课程推荐列表  -->
+<template name="nominateCourse">
+  <view class='course-card'>
+    <text class='card-title'><text class='vui-icon icon-recommend'/>推荐课程</text>
+    <navigator class='more' hover-class='none' url="/pages/nominate/nominate?title=推荐课程&type=1">
+      <text>更多<text class='vui-icon icon-more'></text></text>
+    </navigator>
+    <view class='course-list'>
+      <view class='course-item' wx:for="{{nominateList}}" wx:for-item="item" wx:key="{{item.id}}">
+        <image  bindtap="goToPath" data-item="{{item}}" src="{{item.cover}}" lazy-load="true" class="course-item-cover" /> 
+        <view class='course-item-info'>
+          <text class='course-title'>{{item.name}}</text>
+          <!--统计数据  -->
+          <text class='course-stat'>
+       
+         <text class='course-stat-item {{item.price ==0 ? "":"has-price"}}'>
+           <text class='vui-icon icon-money'/>
+           <text>{{item.price==0?'免费':item.price}}</text>
+          </text>
+
+          <text class='course-stat-item'>
+          <text class='vui-icon icon-browse'/>
+          <text>{{item.browse}}</text>
+          </text>
+
+          <text class='course-stat-item'>
+         <text class='vui-icon icon-collect'/>
+         <text>{{item.collect}}</text>
+          </text>
+
+          </text>
+          <navigator class='course-org' url="/pages/org/org" hover-class='none'>
+            <image src='{{item.org.cover}}' class='course-org-cover' />
+            <text class='course-org-name'>{{item.org.name}}</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!--热门课程列表  -->
+<template name="hotCourse">
+  <view class='course-card'>
+    <text class='card-title'><text class='vui-icon icon-hot'/>热门课程</text>
+    <navigator class='more' hover-class='none'  url="/pages/nominate/nominate?title=热门课程&type=1">
+      <text>更多<text class='vui-icon icon-more'></text></text>
+    </navigator>
+    <view class='course-list'>
+      <view class='course-item' wx:for="{{hotList}}" wx:for-item="item" wx:key="{{item.id}}">
+         <image  bindtap="goToPath" data-item="{{item}}" src="{{item.cover}}" lazy-load="true" class="course-item-cover" /> 
+        <view class='course-item-info'>
+          <text class='course-title'>{{item.name}}</text>
+          <!--统计数据  -->
+          <text class='course-stat'>
+       
+         <text class='course-stat-item {{item.price ==0 ? "":"has-price"}}'>
+           <text class='vui-icon icon-money'/>
+           <text>{{item.price==0?'免费':item.price}}</text>
+          </text>
+
+          <text class='course-stat-item'>
+          <text class='vui-icon icon-browse'/>
+          <text>{{item.browse}}</text>
+          </text>
+
+          <text class='course-stat-item'>
+         <text class='vui-icon icon-collect'/>
+         <text>{{item.collect}}</text>
+          </text>
+
+          </text>
+          <navigator class='course-org' url="/pages/org/org" hover-class='none'>
+            <image src='{{item.org.cover}}' class='course-org-cover' />
+            <text class='course-org-name'>{{item.org.name}}</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!--播放模板  -->
+

@@ -1,0 +1,110 @@
+<!--pages/more/personal/setup/setup.wxml-->
+<!-- <text>pages/more/personal/setup/setup.wxml</text> -->
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:search="onSearch" bind:cancel="onCancel" />
+
+  <view class="my">
+
+    <view class="my-item flex-wrp">
+      <view class="myitem-name flex-item">
+        <van-collapse value="{{ activeNames }}" bind:change="onChange">
+          <van-collapse-item name="0">
+            <view slot="title">错题
+            </view>
+            <van-collapse-item title="错题一" name="2" icon="shop-o">
+              <input>11111</input>
+            </van-collapse-item>
+            <van-collapse-item title="错题二" name="3" icon="shop-o">
+              <input>22222</input>
+            </van-collapse-item>
+            <van-collapse-item title="错题三" name="4" icon="shop-o">
+              <input>33333</input>
+            </van-collapse-item>
+          </van-collapse-item>
+        </van-collapse>
+      </view>
+    </view>
+
+    <view class="my-item flex-wrp">
+      <view class="myitem-name flex-item">
+      <van-collapse value="{{ activeNames }}" bind:change="onChange">
+          <van-collapse-item name="5">
+            <view slot="title">图片
+            </view>
+            <van-collapse-item title="图片一" name="6" icon="shop-o">
+              <input>11111</input>
+            </van-collapse-item>
+            <van-collapse-item title="图片二" name="7" icon="shop-o">
+              <input>22222</input>
+            </van-collapse-item>
+            <van-collapse-item title="图片三" name="8" icon="shop-o">
+              <input>33333</input>
+            </van-collapse-item>
+          </van-collapse-item>
+        </van-collapse>
+      </view>
+    </view>
+
+    <view class="my-item flex-wrp">
+      <view class="myitem-name flex-item">
+        <van-collapse value="{{ activeNames }}" bind:change="onChange">
+          <van-collapse-item name="9">
+            <view slot="title">文章
+            </view>
+            <van-collapse-item title="文章一" name="10" icon="shop-o">
+              <input>11111</input>
+            </van-collapse-item>
+            <van-collapse-item title="文章二" name="11" icon="shop-o">
+              <input>22222</input>
+            </van-collapse-item>
+            <van-collapse-item title="文章三" name="12" icon="shop-o">
+              <input>33333</input>
+            </van-collapse-item>
+          </van-collapse-item>
+        </van-collapse>
+      </view>
+    </view>
+
+    <view class="my-item flex-wrp">
+      <view class="myitem-name flex-item">
+        <van-collapse value="{{ activeNames }}" bind:change="onChange">
+          <van-collapse-item name="13">
+            <view slot="title">视频
+            </view>
+            <van-collapse-item title="视频一" name="14" icon="shop-o">
+              <input>11111</input>
+            </van-collapse-item>
+            <van-collapse-item title="视频二" name="15" icon="shop-o">
+              <input>22222</input>
+            </van-collapse-item>
+            <van-collapse-item title="视频三" name="16" icon="shop-o">
+              <input>33333</input>
+            </van-collapse-item>
+          </van-collapse-item>
+        </van-collapse>
+      </view>
+    </view>
+
+    <view class="my-item flex-wrp">
+      <view class="myitem-name flex-item">
+        <van-collapse value="{{ activeNames }}" bind:change="onChange">
+          <van-collapse-item name="17">
+            <view slot="title">其他
+            </view>
+            <van-collapse-item title="其他一" name="18" icon="shop-o">
+              <input>11111</input>
+            </van-collapse-item>
+            <van-collapse-item title="其他二" name="19" icon="shop-o">
+              <input>22222</input>
+            </van-collapse-item>
+            <van-collapse-item title="其他三" name="20" icon="shop-o">
+              <input>33333</input>
+            </van-collapse-item>
+          </van-collapse-item>
+        </van-collapse>
+      </view>
+    </view>
+
+  </view>
+
+</scroll-view>

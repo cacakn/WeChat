@@ -1,0 +1,3 @@
+<view class="container">
+    <canvas  class="tb" canvas-id="pieCanvas" class="canvas" style="height:300px;width:400px;" bindtouchstart="touchHandler"></canvas>
+</view>

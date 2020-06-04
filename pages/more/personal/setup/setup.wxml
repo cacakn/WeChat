@@ -1,0 +1,46 @@
+<view class="my">
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="账号与安全" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="新消息提醒" size="small" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="隐私" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="通用" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+     <van-cell is-link title="关于我们" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <button style="width:100px; height:40px; text-align:center" bindtap="dl">切换账号</button>
+    </view>
+  </view>
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <button style="width:80px; height:40px; text-align:center">退出</button>
+    </view>
+  </view>
+
+</view>

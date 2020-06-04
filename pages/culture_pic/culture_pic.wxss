@@ -1,0 +1,32 @@
+.bg{background-color: white}
+.culture_border{ 
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  width: 90%;
+  height: 180px;
+  border-radius: 10px;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+}
+.culture_img_border{
+  width: 100%;
+}
+.culture_text_border{
+  border: 1px gold solid;
+  background-color: #FFFFCC;
+  color: #fff;
+  width: 180px;
+  height: 30px;
+  border-radius: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 65px;
+  text-align: center;
+  line-height: 30px;
+  opacity: 0.9;
+}
+h3{
+    font-size: 20px;
+  font-family: "楷体";
+  color: #000066;
+}

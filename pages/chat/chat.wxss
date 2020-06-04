@@ -1,0 +1,147 @@
+.unread {
+  color: #9a9c9b;
+  height: 60rpx;
+  padding: 10rpx 40rpx;
+  text-align: left;
+  width: 670rpx;
+}
+
+.unread text {
+  display: inline-block;
+  line-height: 60rpx;
+  font-size: 22rpx;
+}
+
+.unread image {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  float: right;
+}
+
+.notify-item {
+  width: 625rpx;
+  /* 改 */
+  background: #fff;
+
+  margin: 30rpx;
+  /* 改 */
+  padding: 25rpx 70rpx 25rpx 0;
+  border-bottom: solid 1px #ebebeb;
+}
+
+.notify-item  image {
+  width: 90rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+}
+
+.notify-item .avatar {
+  flex: 1;
+}
+
+.notify-item .notify-content {
+  flex: 4;
+  text-align: left;
+}
+
+.notify-item .notify-content text {
+  display: block;
+}
+
+.notify-item .notify-content .notify-source {
+  color: #818a8f;
+
+  /* 改 */
+
+  font-size: 30rpx;
+
+  padding: 10rpx 0 8rpx 0;
+  /* 改，名字高度 */
+
+}
+
+.notify-item .notify-content .notify-title {
+  color: #afafaf;
+  font-size: 30rpx;
+  line-height: 34rpx;
+}
+
+.placehold {
+  padding: 80rpx 0;
+  font-size: 28rpx;
+}
+
+/* ctnt1 placehold的css */
+
+.container {
+  height: 1400rpx;
+}
+
+.container .search {
+  width: 735rpx;
+  height: 65rpx;
+  padding: 12.5rpx 0 12.5rpx 15rpx;
+  background: #2a8ce5;
+}
+
+.container .search-left {
+  flex: 8;
+  background: #4ea3e7;
+  text-align: left;
+}
+
+.container .search-left input {
+  display: inline-block;
+  height: 65rpx;
+  font-size: 26rpx;
+}
+
+.search-placeholder {
+  color: #8ccefd;
+  line-height: 20rpx;
+}
+
+.container .search .search-left image {
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+  padding: 15rpx 15rpx 15rpx 20rpx;
+}
+
+.container .search .search-right {
+  flex: 1;
+}
+
+.container .search .search-right image {
+  width: 45rpx;
+  height: 45rpx;
+  padding: 10rpx;
+}
+
+.container {
+  padding: 0;
+  font-size: 14rpx;
+  background: #f0f4f3;
+  color: #000;
+}
+
+
+
+
+
+.follow {
+  width: 600rpx;
+  height: 60rpx;
+  background: #fff;
+  margin: 4rpx;
+  padding: 0 70rpx 25rpx 0;
+  border-bottom: solid 1px #ebebeb;
+}
+
+.control{
+  margin: 20rpx;
+  font-size: 15px;
+  color:  #42d6cf;
+}

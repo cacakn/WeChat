@@ -1,0 +1,14 @@
+<view class="bg container">
+  <view class="scape_border  animated bounceIn">
+  <image class="scape_img_border" src="https://gitee.com/KingCrimson/xiang/raw/master/images/10%E6%9C%88%E8%B5%9B%E9%87%8C%E6%9C%A8%E6%B9%96.jpg"></image>
+  <view class="scape_text_border"><h3>赛里木湖</h3></view> 
+  </view>
+  <view class="scape_border  animated bounceIn">
+  <image class="scape_img_border" src="https://gitee.com/KingCrimson/xiang/raw/master/images/11月喀纳斯.jpg"></image>
+  <view class="scape_text_border"><h3>喀纳斯</h3></view> 
+  </view>
+  <view class="scape_border  animated bounceIn">
+  <image class="scape_img_border" src="https://gitee.com/KingCrimson/xiang/raw/master/images/12%E6%9C%88%E9%98%BF%E5%8B%92%E6%B3%B0.jpg"></image>
+  <view class="scape_text_border"><h3>阿勒泰</h3></view> 
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="my">
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="客服对话" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="新权限设置" size="small" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+
+  <view class="my-item flex-wrp">
+
+    <view class="myitem-name flex-item">
+      <van-cell is-link title="意见反馈" link-type="navigateTo" url="/pages/dashboard/index" />
+    </view>
+  </view>
+  
+</view>

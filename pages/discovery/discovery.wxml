@@ -1,0 +1,154 @@
+<view class="top-tab flex-wrp flex-tab ">
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+</view>
+
+<scroll-view scroll-y="true" class="container discovery withtab" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+    <swiper class="activity" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="155" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+<view class="ctnt0 placehold" hidden="{{currentNavtab==0 ? '' : true}}">
+  <view class="article">
+    <van-collapse value="{{ activeNames }}" bind:change="onChange">
+  <van-collapse-item name="1">
+    <view slot="title">新疆地理位置<van-icon name="question-o" /></view>
+    <!-- 以下为口播代码  -->
+          <button class="aniu" bindtap="say" data-text="{{motto}}">
+            <image class="tupian" src="https://gitee.com/KingCrimson/xiang/raw/master/images/koubo.png"></image>
+            <!-- <text class="text1">口播</text> -->
+          </button>
+    新疆远离海洋，深居内陆，四周有高山阻隔，海洋气流不易到达，形成明显的温带大陆性气候。气温温差较大，日照时间充足，降水量少，气候干燥。新疆年平均降水量为150毫米左右，但各地降水量相差很大，南疆的气温高于北疆，北疆的降水量高于南疆。由于新疆大部分地区春夏和秋冬之交日温差极大，故历来有“早穿皮袄午穿纱，围着火炉吃西瓜”之说。山脉与盆地相间排列盆地与高山环抱、喻称“三山夹二盆”。北部阿尔泰山，南部为昆仑山系；天山横亘于新疆中部，把新疆分为南北两半，南部是塔里木盆地，北部是准噶尔盆地。习惯上称天山以南为南疆，天山以北为北疆，把哈密、吐鲁番盆地为东疆
+  </van-collapse-item>
+  <van-collapse-item title="新疆历史文化" name="2">
+  <!-- 以下为口播代码  -->
+          <button class="aniu" bindtap="say" data-text="{{motto1}}">
+            <image class="tupian" src="https://gitee.com/KingCrimson/xiang/raw/master/images/koubo.png"></image>
+            <!-- <text class="text1">口播</text> -->
+            </button>
+   提及新疆的历史文化，大多数人都会联想到丝绸之路，但是这只是新疆历史文化的一部分。心里的历史文化主要分为丝绸之路的文化、游牧民族文化、以佛为信仰的宗教文化，“丝绸之路”是古代中国连接其他洲的商业贸易之路。它把亚洲、欧洲。非洲连接起来，进行贸易和文化的交流丝绸之路起源于汉武帝时期，当时汉武帝派遣张骞出使西域，这就是丝绸之路的最初形态。丝绸之路的起始地位于当时的洛阳，在到达新疆之后，分为了北中南三路，到达了地中海东岸，东罗马帝国等地方。
+贸易带来的是经济的繁荣和文化的交流。当时的新疆在丝绸之路的沿途是有村落的，而且还是比较繁华的，但是随着时间的变迁，那些村庄已经成为了历史。留下的只有少许的村落遗迹。在我国丝绸之路的沿途地方，仍有不少地区还保存着丝绸之路贸易回来的商品。
+  </van-collapse-item>
+  <van-collapse-item title="新疆名人介绍" name="3">
+   <!-- 以下为口播代码  -->
+          <button class="aniu" bindtap="say" data-text="{{motto2}}">
+            <image class="tupian" src="https://gitee.com/KingCrimson/xiang/raw/master/images/koubo.png"></image>
+            <!-- <text class="text1">口播</text> -->
+            </button>
+ 张骞（前164年―前114年），字子文，汉中郡城固（今陕西省汉中市城固县）人，中国汉代杰出的外交家、旅行家、探险家。张骞富有开拓和冒险精神，建元二年（前139年），奉汉武帝之命，由甘父做向导，率领一百多人出使西域，打通了汉朝通往西域的南北道路，即赫赫有名的丝绸之路，汉武帝以军功封其为博望侯。张骞是丝绸之路的开拓者，被誉为“第一个睁开眼睛看世界的中国人”。他将中原文明传播至西域，又从西域诸国引进了汗血马、葡萄、苜蓿、石榴、胡麻等物种到中原，促进了东西方文明的交流。
+  </van-collapse-item>
+   <van-collapse-item title="新疆名胜古迹" name="4">
+    <!-- 以下为口播代码  -->
+          <button class="aniu" bindtap="say" data-text="{{motto3}}">
+            <image class="tupian" src="https://gitee.com/KingCrimson/xiang/raw/master/images/koubo.png"></image>
+            <!-- <text class="text1">口播</text> -->
+            </button>
+    天山天池：
+
+享有“天山明珠”盛誉的天山天池，是一个天然的高山湖泊。它坐落在北天山东段博格达峰下的半山腰，海拔1980米。湖面呈半月形，长3400米，最宽处约1500米，面积4.9平方公里。湖深数米到105米。湖水清澈，晶莹如玉。四周群山环抱，绿草如茵，野花似锦。挺拔、苍翠的云杉、塔松，漫山遍岭，遮天蔽日。
+
+天池东南面就是雄伟的博格达主峰(蒙古语“博格达”，意为灵山、圣山)，海拔5445米。主峰左右又有两峰肩连。抬头远眺，三峰并起，突兀插云，状如笔架。峰顶的冰川积雪，闪烁着皑皑银光，与天池瓦蓝澄碧的湖水相映成趣，构成了这个高山平湖绰约多姿的自然景观。天池属冰碛湖。
+  </van-collapse-item>
+</van-collapse>
+  </view>
+  </view>
+
+  <view class="ctnt1 placehold" hidden="{{currentNavtab==1 ? '' : true}}">
+    <view class="article">
+      <view class="page__hd">
+            <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/culture2.jpg" style="width:100%;height:300px;" mode="aspectFit"></image>
+            <view class="page__title">文化</view>
+            <view class="page__desc">文化是相对于经济、政治而言的人类全部精神活动及其产品，简单来说文化就是地区人类的生活要素形态的统称：即衣、冠、文、物、食、住、行等。</view>
+    </view>
+<!-- 列表循环 -->
+    <block wx:for="{{culturelist}}"  wx:for-item="item" wx:for-index="idx">
+        <navigator url="../discoveryDetails/discoveryDetails?goodsId={{index}}" bindtap='url' data-id="{{item.article_id}}">
+            <view class="page-list">
+            <image src="{{item.img}}" style="width:80px;height:80px;vertical-align: middle;margin:0 0 0 2px;float:left;" mode="aspectFit"></image>
+                <view class="page-head">
+                <view class="page-tl"> {{item.title}} </view>
+                <text class="page-msg">{{item.massage}}</text>
+                </view>      
+            </view>
+        </navigator>
+    </block>
+    </view>
+  </view>
+  
+
+  <view class="ctnt2 placehold" hidden="{{currentNavtab==2 ? '' : true}}">
+    <view class="article">
+       <view class="page__hd">
+            <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/ICH.jpg" style="width:100%;height:300px;" mode="aspectFit"></image>
+            <view class="page__title">非遗</view>
+            <view class="page__desc">非物质文化遗产指被各群体、团体、有时为个人所视为其文化遗产的各种实践、表演、表现形式、知识体系和技能及其有关的工具、实物、工艺品和文化场所。</view>
+    </view>
+<!-- 列表循环 -->
+    <block wx:for="{{ICHlist}}"  wx:for-item="item" wx:for-index="idx">
+        <navigator url="/pages/discoveryDetails/discoveryDetails">
+            <view class="page-list">
+            <image src="{{item.img}}" style="width:80px;height:80px;vertical-align: middle;margin:0 0 0 2px;float:left;" mode="aspectFit"></image>
+                <view class="page-head">
+                <view class="page-tl"> {{item.title}} </view>
+                <text class="page-msg">{{item.massage}}</text>
+                </view>      
+            </view>
+        </navigator>
+    </block>
+    </view>
+  </view>
+
+  <view class="ctnt3 placehold" hidden="{{currentNavtab==3 ? '' : true}}">
+    <view class="article">
+      <view class="page__hd">
+            <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/diet.jpg" style="width:100%;height:300px;" mode="aspectFit"></image>
+            <view class="page__title">饮食</view>
+            <view class="page__desc">饮食是一种文化，而中华美食则誉满天下。中国饭好吃，外国人爱吃也是不争的事实。中国的饮食文化源远流长。几千年来，人们经过不断的总结已形成了中华美食的八大菜系，即鲁、川、粤、闽、苏、浙、湘、皖流派。</view>
+    </view>
+<!-- 列表循环 -->
+    <block wx:for="{{dietlist}}"  wx:for-item="item" wx:for-index="idx">
+        <navigator url="/pages/discoveryDetails/discoveryDetails">
+            <view class="page-list">
+            <image src="{{item.img}}" style="width:80px;height:80px;vertical-align: middle;margin:0 0 0 2px;float:left;" mode="aspectFit"></image>
+                <view class="page-head">
+                <view class="page-tl"> {{item.title}} </view>
+                <text class="page-msg">{{item.massage}}</text>
+                </view>      
+            </view>
+        </navigator>
+    </block>
+    </view>
+  </view>
+
+  <view class="ctnt4 placehold" hidden="{{currentNavtab==4 ? '' : true}}">
+    <view class="article">
+      <view class="page__hd">
+            <image src="https://gitee.com/KingCrimson/xiang/raw/master/images/tourism.jpg" style="width:100%;height:300px;" mode="aspectFit"></image>
+            <view class="page__title">旅游</view>
+            <view class="page__desc">“旅”是旅行，外出，即为了实现某一目的而在空间上从甲地到乙地的行进过程；“游”是外出游览、观光、娱乐，即为达到这些目的所作的旅行。二者合起来即旅游。所以，旅行偏重于行，旅游不但有“行”，且有观光、娱乐含义。</view>
+    </view>
+<!-- 列表循环 -->
+    <block wx:for="{{tourismlist}}"  wx:for-item="item" wx:for-index="idx">
+        <navigator url="/pages/discoveryDetails/discoveryDetails">
+            <view class="page-list">
+            <image src="{{item.img}}" style="width:80px;height:80px;vertical-align: middle;margin:0 0 0 2px;float:left;" mode="aspectFit"></image>
+                <view class="page-head">
+                <view class="page-tl"> {{item.title}} </view>
+                <text class="page-msg">{{item.massage}}</text>
+                </view>      
+            </view>
+        </navigator>
+    </block>
+    </view>
+  </view>
+  
+
+
+</scroll-view>
