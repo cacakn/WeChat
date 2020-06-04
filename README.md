@@ -1,6 +1,4 @@
-# weapp-wechat-zhihu
-
-微信中的知乎--微信小程序 demo // Zhihu in Wechat
+# 疆小游微信小程序
 
 ![](images/v_index.png)
 
@@ -43,7 +41,7 @@ git@github.com:RebeccaHanjw/weapp-wechat-zhihu.git
 ![](images/navigation.gif)
 
 
-##### Demo 用于学习交流, 转载请注明出处
+### 转载请注明出处
 
 
 
